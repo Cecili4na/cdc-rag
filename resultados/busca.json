@@ -1,0 +1,2165 @@
+[
+  {
+    "metodo": "bm25",
+    "granularidade": "artigo",
+    "acerto@1": 0.328,
+    "acerto@3": 0.508,
+    "acerto@5": 0.541,
+    "mrr": 0.421,
+    "perguntas": 61,
+    "erros": [
+      {
+        "id": "q01",
+        "pergunta": "Comprei um celular pela internet e me arrependi. Posso devolver?",
+        "esperado": [
+          "49"
+        ],
+        "veio": [
+          "25",
+          "113",
+          "99",
+          "97",
+          "82"
+        ]
+      },
+      {
+        "id": "q04",
+        "pergunta": "Minha geladeira deu defeito com dois meses de uso. A loja pode mandar eu procurar a fábrica?",
+        "esperado": [
+          "18"
+        ],
+        "veio": [
+          "63",
+          "68",
+          "64",
+          "65",
+          "12"
+        ]
+      },
+      {
+        "id": "q05",
+        "pergunta": "A assistência técnica tem quanto tempo para consertar meu produto com defeito?",
+        "esperado": [
+          "18"
+        ],
+        "veio": [
+          "32",
+          "21",
+          "22",
+          "12",
+          "26"
+        ]
+      },
+      {
+        "id": "q07",
+        "pergunta": "Comprei um pacote de arroz de 5 kg que veio com 4,5 kg. Tenho direito a quê?",
+        "esperado": [
+          "19"
+        ],
+        "veio": [
+          "54-F",
+          "42",
+          "35",
+          "7",
+          "51"
+        ]
+      },
+      {
+        "id": "q08",
+        "pergunta": "Contratei um pintor e o serviço ficou malfeito. O que posso pedir?",
+        "esperado": [
+          "20"
+        ],
+        "veio": [
+          "54-F",
+          "24",
+          "14",
+          "58",
+          "25"
+        ]
+      },
+      {
+        "id": "q09",
+        "pergunta": "A oficina pode usar peça usada no conserto do meu carro sem me avisar?",
+        "esperado": [
+          "21"
+        ],
+        "veio": [
+          "70",
+          "25",
+          "54-G",
+          "1",
+          "84"
+        ]
+      },
+      {
+        "id": "q14",
+        "pergunta": "Um aparelho explodiu e me machucou. Quanto tempo tenho para entrar na justiça pedindo indenização?",
+        "esperado": [
+          "27"
+        ],
+        "veio": [
+          "93",
+          "32",
+          "100",
+          "21",
+          "22"
+        ]
+      },
+      {
+        "id": "q17",
+        "pergunta": "O salão de beleza estragou meu cabelo com um produto. Eles respondem mesmo sem ter tido intenção?",
+        "esperado": [
+          "14"
+        ],
+        "veio": [
+          "54-F",
+          "19",
+          "12",
+          "60",
+          "37"
+        ]
+      },
+      {
+        "id": "q18",
+        "pergunta": "Eu não comprei nada, mas me machuquei com a explosão de um produto na casa do vizinho. Posso usar o CDC?",
+        "esperado": [
+          "17"
+        ],
+        "veio": [
+          "12",
+          "13",
+          "23",
+          "54-F",
+          "19"
+        ]
+      },
+      {
+        "id": "q19",
+        "pergunta": "O site anunciou um preço e na hora de pagar cobrou outro. Eles são obrigados a cumprir o anúncio?",
+        "esperado": [
+          "30",
+          "35"
+        ],
+        "veio": [
+          "107",
+          "52",
+          "22",
+          "37",
+          "19"
+        ]
+      },
+      {
+        "id": "q20",
+        "pergunta": "A loja se recusou a vender pelo preço da propaganda. Quais são as minhas opções?",
+        "esperado": [
+          "35"
+        ],
+        "veio": [
+          "66",
+          "40",
+          "79",
+          "31",
+          "39"
+        ]
+      },
+      {
+        "id": "q21",
+        "pergunta": "A propaganda dizia que o produto fazia uma coisa que ele não faz. Isso é permitido?",
+        "esperado": [
+          "37"
+        ],
+        "veio": [
+          "104",
+          "103",
+          "12",
+          "104-A",
+          "13"
+        ]
+      },
+      {
+        "id": "q23",
+        "pergunta": "Quem tem que provar que a propaganda é verdadeira?",
+        "esperado": [
+          "38"
+        ],
+        "veio": [
+          "14",
+          "12",
+          "1",
+          "87",
+          "84"
+        ]
+      },
+      {
+        "id": "q24",
+        "pergunta": "O banco só libera o empréstimo se eu fizer um seguro junto. Pode isso?",
+        "esperado": [
+          "39"
+        ],
+        "veio": [
+          "101",
+          "72",
+          "73",
+          "30",
+          "56"
+        ]
+      },
+      {
+        "id": "q25",
+        "pergunta": "Recebi em casa um cartão de crédito que eu não pedi. Isso é permitido?",
+        "esperado": [
+          "39"
+        ],
+        "veio": [
+          "54-F",
+          "54-G",
+          "54-C",
+          "54-D",
+          "43"
+        ]
+      },
+      {
+        "id": "q26",
+        "pergunta": "Mandaram um produto que eu não pedi. Tenho que pagar?",
+        "esperado": [
+          "39"
+        ],
+        "veio": [
+          "52",
+          "54-A",
+          "54-B",
+          "12",
+          "13"
+        ]
+      },
+      {
+        "id": "q32",
+        "pergunta": "Meu nome pode ficar no Serasa por quanto tempo?",
+        "esperado": [
+          "43"
+        ],
+        "veio": [
+          "32",
+          "42-A",
+          "21",
+          "91",
+          "33"
+        ]
+      },
+      {
+        "id": "q33",
+        "pergunta": "Colocaram meu nome no cadastro de inadimplentes sem me avisar. Isso pode?",
+        "esperado": [
+          "43"
+        ],
+        "veio": [
+          "42-A",
+          "73",
+          "91",
+          "33",
+          "104-C"
+        ]
+      },
+      {
+        "id": "q36",
+        "pergunta": "Assinei um contrato sem ter chance de ler antes. Ele vale?",
+        "esperado": [
+          "46"
+        ],
+        "veio": [
+          "54-F",
+          "54-G",
+          "51",
+          "30",
+          "54"
+        ]
+      },
+      {
+        "id": "q37",
+        "pergunta": "Uma cláusula do contrato está ambígua. Como ela deve ser interpretada?",
+        "esperado": [
+          "47"
+        ],
+        "veio": [
+          "54",
+          "51",
+          "54-G",
+          "54-F",
+          "25"
+        ]
+      },
+      {
+        "id": "q38",
+        "pergunta": "O vendedor me deu um recibo prometendo um brinde. A loja é obrigada a cumprir?",
+        "esperado": [
+          "48"
+        ],
+        "veio": [
+          "107",
+          "1",
+          "84",
+          "83",
+          "82"
+        ]
+      },
+      {
+        "id": "q43",
+        "pergunta": "Qual é a multa máxima por atraso no pagamento de uma prestação?",
+        "esperado": [
+          "52"
+        ],
+        "veio": [
+          "78",
+          "54-B",
+          "54-A",
+          "104-A",
+          "77"
+        ]
+      },
+      {
+        "id": "q51",
+        "pergunta": "Quais informações o banco precisa me dar antes de eu contratar um crédito?",
+        "esperado": [
+          "52",
+          "54-B"
+        ],
+        "veio": [
+          "72",
+          "54-C",
+          "8",
+          "43",
+          "30"
+        ]
+      },
+      {
+        "id": "q52",
+        "pergunta": "Eu sou uma empresa que comprou um computador para uso próprio. Sou consumidora?",
+        "esperado": [
+          "2"
+        ],
+        "veio": [
+          "91",
+          "58",
+          "102",
+          "50",
+          "18"
+        ]
+      },
+      {
+        "id": "q53",
+        "pergunta": "Quem é considerado fornecedor pelo CDC?",
+        "esperado": [
+          "3"
+        ],
+        "veio": [
+          "14",
+          "12",
+          "40",
+          "60",
+          "54"
+        ]
+      },
+      {
+        "id": "q56",
+        "pergunta": "A empresa de energia pode cortar um serviço essencial sem motivo?",
+        "esperado": [
+          "22"
+        ],
+        "veio": [
+          "18",
+          "37",
+          "54-F",
+          "24",
+          "14"
+        ]
+      },
+      {
+        "id": "q58",
+        "pergunta": "A empresa fechou e abriu outra para não me pagar. O juiz pode cobrar dos sócios?",
+        "esperado": [
+          "28"
+        ],
+        "veio": [
+          "84",
+          "79",
+          "52",
+          "54-A",
+          "22"
+        ]
+      },
+      {
+        "id": "q60",
+        "pergunta": "O vendedor terceirizado me enganou. A loja responde por ele?",
+        "esperado": [
+          "34"
+        ],
+        "veio": [
+          "40",
+          "20",
+          "14",
+          "1",
+          "84"
+        ]
+      }
+    ]
+  },
+  {
+    "metodo": "denso · multilingual-e5-small",
+    "granularidade": "artigo",
+    "acerto@1": 0.525,
+    "acerto@3": 0.705,
+    "acerto@5": 0.738,
+    "mrr": 0.608,
+    "perguntas": 61,
+    "erros": [
+      {
+        "id": "q04",
+        "pergunta": "Minha geladeira deu defeito com dois meses de uso. A loja pode mandar eu procurar a fábrica?",
+        "esperado": [
+          "18"
+        ],
+        "veio": [
+          "12",
+          "14",
+          "26",
+          "55",
+          "101"
+        ]
+      },
+      {
+        "id": "q05",
+        "pergunta": "A assistência técnica tem quanto tempo para consertar meu produto com defeito?",
+        "esperado": [
+          "18"
+        ],
+        "veio": [
+          "26",
+          "14",
+          "27",
+          "12",
+          "49"
+        ]
+      },
+      {
+        "id": "q06",
+        "pergunta": "Passou de 30 dias e não consertaram minha TV. O que posso exigir?",
+        "esperado": [
+          "18"
+        ],
+        "veio": [
+          "26",
+          "43",
+          "30",
+          "27",
+          "20"
+        ]
+      },
+      {
+        "id": "q14",
+        "pergunta": "Um aparelho explodiu e me machucou. Quanto tempo tenho para entrar na justiça pedindo indenização?",
+        "esperado": [
+          "27"
+        ],
+        "veio": [
+          "70",
+          "25",
+          "63",
+          "71",
+          "101"
+        ]
+      },
+      {
+        "id": "q18",
+        "pergunta": "Eu não comprei nada, mas me machuquei com a explosão de um produto na casa do vizinho. Posso usar o CDC?",
+        "esperado": [
+          "17"
+        ],
+        "veio": [
+          "19",
+          "18",
+          "102",
+          "8",
+          "43"
+        ]
+      },
+      {
+        "id": "q24",
+        "pergunta": "O banco só libera o empréstimo se eu fizer um seguro junto. Pode isso?",
+        "esperado": [
+          "39"
+        ],
+        "veio": [
+          "101",
+          "43",
+          "103",
+          "54-D",
+          "54-C"
+        ]
+      },
+      {
+        "id": "q25",
+        "pergunta": "Recebi em casa um cartão de crédito que eu não pedi. Isso é permitido?",
+        "esperado": [
+          "39"
+        ],
+        "veio": [
+          "54-C",
+          "43",
+          "54-G",
+          "42",
+          "54-F"
+        ]
+      },
+      {
+        "id": "q26",
+        "pergunta": "Mandaram um produto que eu não pedi. Tenho que pagar?",
+        "esperado": [
+          "39"
+        ],
+        "veio": [
+          "13",
+          "40",
+          "54-A",
+          "44",
+          "54-C"
+        ]
+      },
+      {
+        "id": "q29",
+        "pergunta": "A empresa de cobrança ligou para meu trabalho e me expôs na frente dos colegas. Eles podem fazer isso?",
+        "esperado": [
+          "42"
+        ],
+        "veio": [
+          "54-F",
+          "54-D",
+          "98",
+          "103",
+          "54-B"
+        ]
+      },
+      {
+        "id": "q36",
+        "pergunta": "Assinei um contrato sem ter chance de ler antes. Ele vale?",
+        "esperado": [
+          "46"
+        ],
+        "veio": [
+          "54-G",
+          "49",
+          "54-D",
+          "54-C",
+          "54-B"
+        ]
+      },
+      {
+        "id": "q37",
+        "pergunta": "Uma cláusula do contrato está ambígua. Como ela deve ser interpretada?",
+        "esperado": [
+          "47"
+        ],
+        "veio": [
+          "53",
+          "25",
+          "54",
+          "51",
+          "18"
+        ]
+      },
+      {
+        "id": "q38",
+        "pergunta": "O vendedor me deu um recibo prometendo um brinde. A loja é obrigada a cumprir?",
+        "esperado": [
+          "48"
+        ],
+        "veio": [
+          "14",
+          "35",
+          "13",
+          "54-C",
+          "25"
+        ]
+      },
+      {
+        "id": "q54",
+        "pergunta": "No processo, eu é que tenho que provar tudo contra a empresa?",
+        "esperado": [
+          "6"
+        ],
+        "veio": [
+          "42-A",
+          "26",
+          "84",
+          "88",
+          "103"
+        ]
+      },
+      {
+        "id": "q57",
+        "pergunta": "A loja não sabia que o produto tinha defeito. Isso livra ela da responsabilidade?",
+        "esperado": [
+          "23"
+        ],
+        "veio": [
+          "14",
+          "12",
+          "25",
+          "13",
+          "101"
+        ]
+      },
+      {
+        "id": "q60",
+        "pergunta": "O vendedor terceirizado me enganou. A loja responde por ele?",
+        "esperado": [
+          "34"
+        ],
+        "veio": [
+          "13",
+          "14",
+          "40",
+          "39",
+          "20"
+        ]
+      },
+      {
+        "id": "q61",
+        "pergunta": "Onde posso entrar com a ação contra a empresa, na minha cidade?",
+        "esperado": [
+          "101"
+        ],
+        "veio": [
+          "115",
+          "90",
+          "93",
+          "82",
+          "104"
+        ]
+      }
+    ]
+  },
+  {
+    "metodo": "hibrido · multilingual-e5-small",
+    "granularidade": "artigo",
+    "acerto@1": 0.426,
+    "acerto@3": 0.525,
+    "acerto@5": 0.574,
+    "mrr": 0.483,
+    "perguntas": 61,
+    "erros": [
+      {
+        "id": "q01",
+        "pergunta": "Comprei um celular pela internet e me arrependi. Posso devolver?",
+        "esperado": [
+          "49"
+        ],
+        "veio": [
+          "25",
+          "14",
+          "18",
+          "54",
+          "41"
+        ]
+      },
+      {
+        "id": "q04",
+        "pergunta": "Minha geladeira deu defeito com dois meses de uso. A loja pode mandar eu procurar a fábrica?",
+        "esperado": [
+          "18"
+        ],
+        "veio": [
+          "12",
+          "26",
+          "102",
+          "14",
+          "70"
+        ]
+      },
+      {
+        "id": "q05",
+        "pergunta": "A assistência técnica tem quanto tempo para consertar meu produto com defeito?",
+        "esperado": [
+          "18"
+        ],
+        "veio": [
+          "26",
+          "12",
+          "14",
+          "21",
+          "32"
+        ]
+      },
+      {
+        "id": "q06",
+        "pergunta": "Passou de 30 dias e não consertaram minha TV. O que posso exigir?",
+        "esperado": [
+          "18"
+        ],
+        "veio": [
+          "30",
+          "43",
+          "26",
+          "20",
+          "40"
+        ]
+      },
+      {
+        "id": "q07",
+        "pergunta": "Comprei um pacote de arroz de 5 kg que veio com 4,5 kg. Tenho direito a quê?",
+        "esperado": [
+          "19"
+        ],
+        "veio": [
+          "35",
+          "54-F",
+          "54",
+          "7",
+          "53"
+        ]
+      },
+      {
+        "id": "q08",
+        "pergunta": "Contratei um pintor e o serviço ficou malfeito. O que posso pedir?",
+        "esperado": [
+          "20"
+        ],
+        "veio": [
+          "14",
+          "25",
+          "54-F",
+          "26",
+          "10"
+        ]
+      },
+      {
+        "id": "q09",
+        "pergunta": "A oficina pode usar peça usada no conserto do meu carro sem me avisar?",
+        "esperado": [
+          "21"
+        ],
+        "veio": [
+          "25",
+          "70",
+          "84",
+          "54-G",
+          "60"
+        ]
+      },
+      {
+        "id": "q14",
+        "pergunta": "Um aparelho explodiu e me machucou. Quanto tempo tenho para entrar na justiça pedindo indenização?",
+        "esperado": [
+          "27"
+        ],
+        "veio": [
+          "101",
+          "103",
+          "63",
+          "84",
+          "70"
+        ]
+      },
+      {
+        "id": "q17",
+        "pergunta": "O salão de beleza estragou meu cabelo com um produto. Eles respondem mesmo sem ter tido intenção?",
+        "esperado": [
+          "14"
+        ],
+        "veio": [
+          "19",
+          "12",
+          "25",
+          "37",
+          "18"
+        ]
+      },
+      {
+        "id": "q18",
+        "pergunta": "Eu não comprei nada, mas me machuquei com a explosão de um produto na casa do vizinho. Posso usar o CDC?",
+        "esperado": [
+          "17"
+        ],
+        "veio": [
+          "19",
+          "18",
+          "8",
+          "12",
+          "10"
+        ]
+      },
+      {
+        "id": "q20",
+        "pergunta": "A loja se recusou a vender pelo preço da propaganda. Quais são as minhas opções?",
+        "esperado": [
+          "35"
+        ],
+        "veio": [
+          "31",
+          "20",
+          "39",
+          "66",
+          "60"
+        ]
+      },
+      {
+        "id": "q21",
+        "pergunta": "A propaganda dizia que o produto fazia uma coisa que ele não faz. Isso é permitido?",
+        "esperado": [
+          "37"
+        ],
+        "veio": [
+          "12",
+          "10",
+          "13",
+          "8",
+          "32"
+        ]
+      },
+      {
+        "id": "q23",
+        "pergunta": "Quem tem que provar que a propaganda é verdadeira?",
+        "esperado": [
+          "38"
+        ],
+        "veio": [
+          "14",
+          "12",
+          "84",
+          "60",
+          "67"
+        ]
+      },
+      {
+        "id": "q24",
+        "pergunta": "O banco só libera o empréstimo se eu fizer um seguro junto. Pode isso?",
+        "esperado": [
+          "39"
+        ],
+        "veio": [
+          "101",
+          "43",
+          "73",
+          "28",
+          "14"
+        ]
+      },
+      {
+        "id": "q25",
+        "pergunta": "Recebi em casa um cartão de crédito que eu não pedi. Isso é permitido?",
+        "esperado": [
+          "39"
+        ],
+        "veio": [
+          "54-C",
+          "54-G",
+          "54-F",
+          "43",
+          "54-D"
+        ]
+      },
+      {
+        "id": "q26",
+        "pergunta": "Mandaram um produto que eu não pedi. Tenho que pagar?",
+        "esperado": [
+          "39"
+        ],
+        "veio": [
+          "54-A",
+          "13",
+          "52",
+          "14",
+          "12"
+        ]
+      },
+      {
+        "id": "q29",
+        "pergunta": "A empresa de cobrança ligou para meu trabalho e me expôs na frente dos colegas. Eles podem fazer isso?",
+        "esperado": [
+          "42"
+        ],
+        "veio": [
+          "107",
+          "42-A",
+          "51",
+          "84",
+          "78"
+        ]
+      },
+      {
+        "id": "q32",
+        "pergunta": "Meu nome pode ficar no Serasa por quanto tempo?",
+        "esperado": [
+          "43"
+        ],
+        "veio": [
+          "42-A",
+          "33",
+          "72",
+          "73",
+          "21"
+        ]
+      },
+      {
+        "id": "q36",
+        "pergunta": "Assinei um contrato sem ter chance de ler antes. Ele vale?",
+        "esperado": [
+          "46"
+        ],
+        "veio": [
+          "54-G",
+          "49",
+          "54-D",
+          "54",
+          "54-F"
+        ]
+      },
+      {
+        "id": "q37",
+        "pergunta": "Uma cláusula do contrato está ambígua. Como ela deve ser interpretada?",
+        "esperado": [
+          "47"
+        ],
+        "veio": [
+          "54",
+          "51",
+          "25",
+          "53",
+          "54-B"
+        ]
+      },
+      {
+        "id": "q38",
+        "pergunta": "O vendedor me deu um recibo prometendo um brinde. A loja é obrigada a cumprir?",
+        "esperado": [
+          "48"
+        ],
+        "veio": [
+          "84",
+          "107",
+          "14",
+          "1",
+          "35"
+        ]
+      },
+      {
+        "id": "q43",
+        "pergunta": "Qual é a multa máxima por atraso no pagamento de uma prestação?",
+        "esperado": [
+          "52"
+        ],
+        "veio": [
+          "54-B",
+          "77",
+          "57",
+          "74",
+          "104-A"
+        ]
+      },
+      {
+        "id": "q53",
+        "pergunta": "Quem é considerado fornecedor pelo CDC?",
+        "esperado": [
+          "3"
+        ],
+        "veio": [
+          "14",
+          "101",
+          "54-F",
+          "44",
+          "26"
+        ]
+      },
+      {
+        "id": "q54",
+        "pergunta": "No processo, eu é que tenho que provar tudo contra a empresa?",
+        "esperado": [
+          "6"
+        ],
+        "veio": [
+          "88",
+          "101",
+          "84",
+          "14",
+          "103"
+        ]
+      },
+      {
+        "id": "q57",
+        "pergunta": "A loja não sabia que o produto tinha defeito. Isso livra ela da responsabilidade?",
+        "esperado": [
+          "23"
+        ],
+        "veio": [
+          "14",
+          "12",
+          "13",
+          "25",
+          "26"
+        ]
+      },
+      {
+        "id": "q60",
+        "pergunta": "O vendedor terceirizado me enganou. A loja responde por ele?",
+        "esperado": [
+          "34"
+        ],
+        "veio": [
+          "40",
+          "14",
+          "20",
+          "73",
+          "71"
+        ]
+      }
+    ]
+  },
+  {
+    "metodo": "denso · multilingual-e5-base",
+    "granularidade": "artigo",
+    "acerto@1": 0.475,
+    "acerto@3": 0.639,
+    "acerto@5": 0.721,
+    "mrr": 0.566,
+    "perguntas": 61,
+    "erros": [
+      {
+        "id": "q04",
+        "pergunta": "Minha geladeira deu defeito com dois meses de uso. A loja pode mandar eu procurar a fábrica?",
+        "esperado": [
+          "18"
+        ],
+        "veio": [
+          "26",
+          "12",
+          "70",
+          "14",
+          "74"
+        ]
+      },
+      {
+        "id": "q05",
+        "pergunta": "A assistência técnica tem quanto tempo para consertar meu produto com defeito?",
+        "esperado": [
+          "18"
+        ],
+        "veio": [
+          "26",
+          "12",
+          "70",
+          "27",
+          "14"
+        ]
+      },
+      {
+        "id": "q06",
+        "pergunta": "Passou de 30 dias e não consertaram minha TV. O que posso exigir?",
+        "esperado": [
+          "18"
+        ],
+        "veio": [
+          "26",
+          "49",
+          "74",
+          "104-B",
+          "104-A"
+        ]
+      },
+      {
+        "id": "q09",
+        "pergunta": "A oficina pode usar peça usada no conserto do meu carro sem me avisar?",
+        "esperado": [
+          "21"
+        ],
+        "veio": [
+          "10",
+          "70",
+          "8",
+          "32",
+          "40"
+        ]
+      },
+      {
+        "id": "q18",
+        "pergunta": "Eu não comprei nada, mas me machuquei com a explosão de um produto na casa do vizinho. Posso usar o CDC?",
+        "esperado": [
+          "17"
+        ],
+        "veio": [
+          "26",
+          "10",
+          "12",
+          "14",
+          "18"
+        ]
+      },
+      {
+        "id": "q24",
+        "pergunta": "O banco só libera o empréstimo se eu fizer um seguro junto. Pode isso?",
+        "esperado": [
+          "39"
+        ],
+        "veio": [
+          "101",
+          "100",
+          "52",
+          "104-B",
+          "54-C"
+        ]
+      },
+      {
+        "id": "q25",
+        "pergunta": "Recebi em casa um cartão de crédito que eu não pedi. Isso é permitido?",
+        "esperado": [
+          "39"
+        ],
+        "veio": [
+          "54-G",
+          "54-C",
+          "54-A",
+          "33",
+          "43"
+        ]
+      },
+      {
+        "id": "q26",
+        "pergunta": "Mandaram um produto que eu não pedi. Tenho que pagar?",
+        "esperado": [
+          "39"
+        ],
+        "veio": [
+          "35",
+          "40",
+          "33",
+          "10",
+          "14"
+        ]
+      },
+      {
+        "id": "q32",
+        "pergunta": "Meu nome pode ficar no Serasa por quanto tempo?",
+        "esperado": [
+          "43"
+        ],
+        "veio": [
+          "73",
+          "72",
+          "74",
+          "69",
+          "71"
+        ]
+      },
+      {
+        "id": "q36",
+        "pergunta": "Assinei um contrato sem ter chance de ler antes. Ele vale?",
+        "esperado": [
+          "46"
+        ],
+        "veio": [
+          "54",
+          "40",
+          "53",
+          "14",
+          "50"
+        ]
+      },
+      {
+        "id": "q38",
+        "pergunta": "O vendedor me deu um recibo prometendo um brinde. A loja é obrigada a cumprir?",
+        "esperado": [
+          "48"
+        ],
+        "veio": [
+          "42",
+          "35",
+          "41",
+          "74",
+          "40"
+        ]
+      },
+      {
+        "id": "q41",
+        "pergunta": "O contrato diz que a empresa não se responsabiliza por nenhum defeito. Essa cláusula vale?",
+        "esperado": [
+          "51",
+          "25"
+        ],
+        "veio": [
+          "14",
+          "12",
+          "22",
+          "53",
+          "54"
+        ]
+      },
+      {
+        "id": "q42",
+        "pergunta": "Uma cláusula me obriga a pagar multa abusiva se eu cancelar. Ela é válida?",
+        "esperado": [
+          "51"
+        ],
+        "veio": [
+          "53",
+          "59",
+          "37",
+          "52",
+          "56"
+        ]
+      },
+      {
+        "id": "q54",
+        "pergunta": "No processo, eu é que tenho que provar tudo contra a empresa?",
+        "esperado": [
+          "6"
+        ],
+        "veio": [
+          "26",
+          "12",
+          "14",
+          "90",
+          "87"
+        ]
+      },
+      {
+        "id": "q56",
+        "pergunta": "A empresa de energia pode cortar um serviço essencial sem motivo?",
+        "esperado": [
+          "22"
+        ],
+        "veio": [
+          "40",
+          "20",
+          "55",
+          "102",
+          "14"
+        ]
+      },
+      {
+        "id": "q60",
+        "pergunta": "O vendedor terceirizado me enganou. A loja responde por ele?",
+        "esperado": [
+          "34"
+        ],
+        "veio": [
+          "14",
+          "12",
+          "37",
+          "13",
+          "23"
+        ]
+      },
+      {
+        "id": "q61",
+        "pergunta": "Onde posso entrar com a ação contra a empresa, na minha cidade?",
+        "esperado": [
+          "101"
+        ],
+        "veio": [
+          "105",
+          "56",
+          "93",
+          "102",
+          "26"
+        ]
+      }
+    ]
+  },
+  {
+    "metodo": "hibrido · multilingual-e5-base",
+    "granularidade": "artigo",
+    "acerto@1": 0.393,
+    "acerto@3": 0.557,
+    "acerto@5": 0.623,
+    "mrr": 0.479,
+    "perguntas": 61,
+    "erros": [
+      {
+        "id": "q01",
+        "pergunta": "Comprei um celular pela internet e me arrependi. Posso devolver?",
+        "esperado": [
+          "49"
+        ],
+        "veio": [
+          "14",
+          "18",
+          "87",
+          "56",
+          "12"
+        ]
+      },
+      {
+        "id": "q04",
+        "pergunta": "Minha geladeira deu defeito com dois meses de uso. A loja pode mandar eu procurar a fábrica?",
+        "esperado": [
+          "18"
+        ],
+        "veio": [
+          "12",
+          "26",
+          "63",
+          "70",
+          "74"
+        ]
+      },
+      {
+        "id": "q05",
+        "pergunta": "A assistência técnica tem quanto tempo para consertar meu produto com defeito?",
+        "esperado": [
+          "18"
+        ],
+        "veio": [
+          "26",
+          "12",
+          "32",
+          "21",
+          "22"
+        ]
+      },
+      {
+        "id": "q07",
+        "pergunta": "Comprei um pacote de arroz de 5 kg que veio com 4,5 kg. Tenho direito a quê?",
+        "esperado": [
+          "19"
+        ],
+        "veio": [
+          "13",
+          "26",
+          "7",
+          "74",
+          "53"
+        ]
+      },
+      {
+        "id": "q08",
+        "pergunta": "Contratei um pintor e o serviço ficou malfeito. O que posso pedir?",
+        "esperado": [
+          "20"
+        ],
+        "veio": [
+          "14",
+          "26",
+          "24",
+          "23",
+          "27"
+        ]
+      },
+      {
+        "id": "q09",
+        "pergunta": "A oficina pode usar peça usada no conserto do meu carro sem me avisar?",
+        "esperado": [
+          "21"
+        ],
+        "veio": [
+          "70",
+          "25",
+          "60",
+          "63",
+          "88"
+        ]
+      },
+      {
+        "id": "q14",
+        "pergunta": "Um aparelho explodiu e me machucou. Quanto tempo tenho para entrar na justiça pedindo indenização?",
+        "esperado": [
+          "27"
+        ],
+        "veio": [
+          "100",
+          "84",
+          "63",
+          "93",
+          "103"
+        ]
+      },
+      {
+        "id": "q17",
+        "pergunta": "O salão de beleza estragou meu cabelo com um produto. Eles respondem mesmo sem ter tido intenção?",
+        "esperado": [
+          "14"
+        ],
+        "veio": [
+          "12",
+          "19",
+          "10",
+          "37",
+          "24"
+        ]
+      },
+      {
+        "id": "q18",
+        "pergunta": "Eu não comprei nada, mas me machuquei com a explosão de um produto na casa do vizinho. Posso usar o CDC?",
+        "esperado": [
+          "17"
+        ],
+        "veio": [
+          "12",
+          "10",
+          "18",
+          "13",
+          "14"
+        ]
+      },
+      {
+        "id": "q20",
+        "pergunta": "A loja se recusou a vender pelo preço da propaganda. Quais são as minhas opções?",
+        "esperado": [
+          "35"
+        ],
+        "veio": [
+          "66",
+          "37",
+          "20",
+          "60",
+          "39"
+        ]
+      },
+      {
+        "id": "q21",
+        "pergunta": "A propaganda dizia que o produto fazia uma coisa que ele não faz. Isso é permitido?",
+        "esperado": [
+          "37"
+        ],
+        "veio": [
+          "12",
+          "10",
+          "8",
+          "56",
+          "19"
+        ]
+      },
+      {
+        "id": "q23",
+        "pergunta": "Quem tem que provar que a propaganda é verdadeira?",
+        "esperado": [
+          "38"
+        ],
+        "veio": [
+          "12",
+          "14",
+          "67",
+          "82",
+          "68"
+        ]
+      },
+      {
+        "id": "q24",
+        "pergunta": "O banco só libera o empréstimo se eu fizer um seguro junto. Pode isso?",
+        "esperado": [
+          "39"
+        ],
+        "veio": [
+          "101",
+          "14",
+          "19",
+          "12",
+          "43"
+        ]
+      },
+      {
+        "id": "q25",
+        "pergunta": "Recebi em casa um cartão de crédito que eu não pedi. Isso é permitido?",
+        "esperado": [
+          "39"
+        ],
+        "veio": [
+          "54-G",
+          "54-C",
+          "54-F",
+          "54-A",
+          "43"
+        ]
+      },
+      {
+        "id": "q26",
+        "pergunta": "Mandaram um produto que eu não pedi. Tenho que pagar?",
+        "esperado": [
+          "39"
+        ],
+        "veio": [
+          "12",
+          "52",
+          "10",
+          "14",
+          "32"
+        ]
+      },
+      {
+        "id": "q32",
+        "pergunta": "Meu nome pode ficar no Serasa por quanto tempo?",
+        "esperado": [
+          "43"
+        ],
+        "veio": [
+          "26",
+          "42-A",
+          "73",
+          "74",
+          "72"
+        ]
+      },
+      {
+        "id": "q36",
+        "pergunta": "Assinei um contrato sem ter chance de ler antes. Ele vale?",
+        "esperado": [
+          "46"
+        ],
+        "veio": [
+          "54",
+          "53",
+          "49",
+          "54-G",
+          "51"
+        ]
+      },
+      {
+        "id": "q37",
+        "pergunta": "Uma cláusula do contrato está ambígua. Como ela deve ser interpretada?",
+        "esperado": [
+          "47"
+        ],
+        "veio": [
+          "54",
+          "51",
+          "50",
+          "53",
+          "54-G"
+        ]
+      },
+      {
+        "id": "q38",
+        "pergunta": "O vendedor me deu um recibo prometendo um brinde. A loja é obrigada a cumprir?",
+        "esperado": [
+          "48"
+        ],
+        "veio": [
+          "74",
+          "70",
+          "59",
+          "60",
+          "107"
+        ]
+      },
+      {
+        "id": "q52",
+        "pergunta": "Eu sou uma empresa que comprou um computador para uso próprio. Sou consumidora?",
+        "esperado": [
+          "2"
+        ],
+        "veio": [
+          "56",
+          "18",
+          "12",
+          "81",
+          "91"
+        ]
+      },
+      {
+        "id": "q53",
+        "pergunta": "Quem é considerado fornecedor pelo CDC?",
+        "esperado": [
+          "3"
+        ],
+        "veio": [
+          "14",
+          "44",
+          "12",
+          "101",
+          "10"
+        ]
+      },
+      {
+        "id": "q56",
+        "pergunta": "A empresa de energia pode cortar um serviço essencial sem motivo?",
+        "esperado": [
+          "22"
+        ],
+        "veio": [
+          "37",
+          "14",
+          "24",
+          "18",
+          "26"
+        ]
+      },
+      {
+        "id": "q60",
+        "pergunta": "O vendedor terceirizado me enganou. A loja responde por ele?",
+        "esperado": [
+          "34"
+        ],
+        "veio": [
+          "14",
+          "20",
+          "40",
+          "82",
+          "66"
+        ]
+      }
+    ]
+  },
+  {
+    "metodo": "denso · bge-m3",
+    "granularidade": "artigo",
+    "acerto@1": 0.672,
+    "acerto@3": 0.836,
+    "acerto@5": 0.869,
+    "mrr": 0.753,
+    "perguntas": 61,
+    "erros": [
+      {
+        "id": "q24",
+        "pergunta": "O banco só libera o empréstimo se eu fizer um seguro junto. Pode isso?",
+        "esperado": [
+          "39"
+        ],
+        "veio": [
+          "54-F",
+          "54-C",
+          "52",
+          "54-D",
+          "74"
+        ]
+      },
+      {
+        "id": "q25",
+        "pergunta": "Recebi em casa um cartão de crédito que eu não pedi. Isso é permitido?",
+        "esperado": [
+          "39"
+        ],
+        "veio": [
+          "54-G",
+          "54-C",
+          "54-F",
+          "54-D",
+          "43"
+        ]
+      },
+      {
+        "id": "q26",
+        "pergunta": "Mandaram um produto que eu não pedi. Tenho que pagar?",
+        "esperado": [
+          "39"
+        ],
+        "veio": [
+          "18",
+          "41",
+          "54-G",
+          "70",
+          "20"
+        ]
+      },
+      {
+        "id": "q32",
+        "pergunta": "Meu nome pode ficar no Serasa por quanto tempo?",
+        "esperado": [
+          "43"
+        ],
+        "veio": [
+          "72",
+          "73",
+          "27",
+          "63",
+          "74"
+        ]
+      },
+      {
+        "id": "q33",
+        "pergunta": "Colocaram meu nome no cadastro de inadimplentes sem me avisar. Isso pode?",
+        "esperado": [
+          "43"
+        ],
+        "veio": [
+          "73",
+          "72",
+          "42",
+          "63",
+          "104-B"
+        ]
+      },
+      {
+        "id": "q38",
+        "pergunta": "O vendedor me deu um recibo prometendo um brinde. A loja é obrigada a cumprir?",
+        "esperado": [
+          "48"
+        ],
+        "veio": [
+          "31",
+          "40",
+          "74",
+          "41",
+          "30"
+        ]
+      },
+      {
+        "id": "q54",
+        "pergunta": "No processo, eu é que tenho que provar tudo contra a empresa?",
+        "esperado": [
+          "6"
+        ],
+        "veio": [
+          "28",
+          "103",
+          "54-B",
+          "51",
+          "101"
+        ]
+      },
+      {
+        "id": "q60",
+        "pergunta": "O vendedor terceirizado me enganou. A loja responde por ele?",
+        "esperado": [
+          "34"
+        ],
+        "veio": [
+          "13",
+          "20",
+          "19",
+          "18",
+          "14"
+        ]
+      }
+    ]
+  },
+  {
+    "metodo": "hibrido · bge-m3",
+    "granularidade": "artigo",
+    "acerto@1": 0.475,
+    "acerto@3": 0.574,
+    "acerto@5": 0.623,
+    "mrr": 0.519,
+    "perguntas": 61,
+    "erros": [
+      {
+        "id": "q01",
+        "pergunta": "Comprei um celular pela internet e me arrependi. Posso devolver?",
+        "esperado": [
+          "49"
+        ],
+        "veio": [
+          "25",
+          "41",
+          "18",
+          "14",
+          "100"
+        ]
+      },
+      {
+        "id": "q04",
+        "pergunta": "Minha geladeira deu defeito com dois meses de uso. A loja pode mandar eu procurar a fábrica?",
+        "esperado": [
+          "18"
+        ],
+        "veio": [
+          "12",
+          "70",
+          "26",
+          "64",
+          "74"
+        ]
+      },
+      {
+        "id": "q05",
+        "pergunta": "A assistência técnica tem quanto tempo para consertar meu produto com defeito?",
+        "esperado": [
+          "18"
+        ],
+        "veio": [
+          "26",
+          "12",
+          "21",
+          "14",
+          "32"
+        ]
+      },
+      {
+        "id": "q07",
+        "pergunta": "Comprei um pacote de arroz de 5 kg que veio com 4,5 kg. Tenho direito a quê?",
+        "esperado": [
+          "19"
+        ],
+        "veio": [
+          "42",
+          "54-F",
+          "13",
+          "35",
+          "54-G"
+        ]
+      },
+      {
+        "id": "q08",
+        "pergunta": "Contratei um pintor e o serviço ficou malfeito. O que posso pedir?",
+        "esperado": [
+          "20"
+        ],
+        "veio": [
+          "14",
+          "25",
+          "54-F",
+          "26",
+          "21"
+        ]
+      },
+      {
+        "id": "q09",
+        "pergunta": "A oficina pode usar peça usada no conserto do meu carro sem me avisar?",
+        "esperado": [
+          "21"
+        ],
+        "veio": [
+          "70",
+          "25",
+          "73",
+          "88",
+          "63"
+        ]
+      },
+      {
+        "id": "q14",
+        "pergunta": "Um aparelho explodiu e me machucou. Quanto tempo tenho para entrar na justiça pedindo indenização?",
+        "esperado": [
+          "27"
+        ],
+        "veio": [
+          "100",
+          "93",
+          "99",
+          "103",
+          "101"
+        ]
+      },
+      {
+        "id": "q17",
+        "pergunta": "O salão de beleza estragou meu cabelo com um produto. Eles respondem mesmo sem ter tido intenção?",
+        "esperado": [
+          "14"
+        ],
+        "veio": [
+          "18",
+          "12",
+          "19",
+          "25",
+          "21"
+        ]
+      },
+      {
+        "id": "q18",
+        "pergunta": "Eu não comprei nada, mas me machuquei com a explosão de um produto na casa do vizinho. Posso usar o CDC?",
+        "esperado": [
+          "17"
+        ],
+        "veio": [
+          "12",
+          "10",
+          "18",
+          "8",
+          "13"
+        ]
+      },
+      {
+        "id": "q20",
+        "pergunta": "A loja se recusou a vender pelo preço da propaganda. Quais são as minhas opções?",
+        "esperado": [
+          "35"
+        ],
+        "veio": [
+          "66",
+          "39",
+          "37",
+          "60",
+          "54-G"
+        ]
+      },
+      {
+        "id": "q21",
+        "pergunta": "A propaganda dizia que o produto fazia uma coisa que ele não faz. Isso é permitido?",
+        "esperado": [
+          "37"
+        ],
+        "veio": [
+          "39",
+          "10",
+          "54-C",
+          "8",
+          "12"
+        ]
+      },
+      {
+        "id": "q23",
+        "pergunta": "Quem tem que provar que a propaganda é verdadeira?",
+        "esperado": [
+          "38"
+        ],
+        "veio": [
+          "82",
+          "67",
+          "12",
+          "68",
+          "60"
+        ]
+      },
+      {
+        "id": "q24",
+        "pergunta": "O banco só libera o empréstimo se eu fizer um seguro junto. Pode isso?",
+        "esperado": [
+          "39"
+        ],
+        "veio": [
+          "101",
+          "54-G",
+          "74",
+          "43",
+          "79"
+        ]
+      },
+      {
+        "id": "q25",
+        "pergunta": "Recebi em casa um cartão de crédito que eu não pedi. Isso é permitido?",
+        "esperado": [
+          "39"
+        ],
+        "veio": [
+          "54-G",
+          "54-F",
+          "54-C",
+          "54-D",
+          "43"
+        ]
+      },
+      {
+        "id": "q26",
+        "pergunta": "Mandaram um produto que eu não pedi. Tenho que pagar?",
+        "esperado": [
+          "39"
+        ],
+        "veio": [
+          "18",
+          "13",
+          "52",
+          "12",
+          "19"
+        ]
+      },
+      {
+        "id": "q32",
+        "pergunta": "Meu nome pode ficar no Serasa por quanto tempo?",
+        "esperado": [
+          "43"
+        ],
+        "veio": [
+          "26",
+          "32",
+          "72",
+          "73",
+          "42-A"
+        ]
+      },
+      {
+        "id": "q36",
+        "pergunta": "Assinei um contrato sem ter chance de ler antes. Ele vale?",
+        "esperado": [
+          "46"
+        ],
+        "veio": [
+          "54",
+          "51",
+          "54-F",
+          "53",
+          "49"
+        ]
+      },
+      {
+        "id": "q37",
+        "pergunta": "Uma cláusula do contrato está ambígua. Como ela deve ser interpretada?",
+        "esperado": [
+          "47"
+        ],
+        "veio": [
+          "51",
+          "54",
+          "25",
+          "50",
+          "53"
+        ]
+      },
+      {
+        "id": "q38",
+        "pergunta": "O vendedor me deu um recibo prometendo um brinde. A loja é obrigada a cumprir?",
+        "esperado": [
+          "48"
+        ],
+        "veio": [
+          "74",
+          "107",
+          "66",
+          "84",
+          "63"
+        ]
+      },
+      {
+        "id": "q52",
+        "pergunta": "Eu sou uma empresa que comprou um computador para uso próprio. Sou consumidora?",
+        "esperado": [
+          "2"
+        ],
+        "veio": [
+          "18",
+          "12",
+          "81",
+          "54-B",
+          "91"
+        ]
+      },
+      {
+        "id": "q53",
+        "pergunta": "Quem é considerado fornecedor pelo CDC?",
+        "esperado": [
+          "3"
+        ],
+        "veio": [
+          "101",
+          "12",
+          "14",
+          "44",
+          "54-F"
+        ]
+      },
+      {
+        "id": "q54",
+        "pergunta": "No processo, eu é que tenho que provar tudo contra a empresa?",
+        "esperado": [
+          "6"
+        ],
+        "veio": [
+          "101",
+          "103",
+          "12",
+          "51",
+          "54-F"
+        ]
+      },
+      {
+        "id": "q60",
+        "pergunta": "O vendedor terceirizado me enganou. A loja responde por ele?",
+        "esperado": [
+          "34"
+        ],
+        "veio": [
+          "20",
+          "14",
+          "84",
+          "40",
+          "70"
+        ]
+      }
+    ]
+  },
+  {
+    "metodo": "denso · bge-m3",
+    "granularidade": "trecho",
+    "acerto@1": 0.623,
+    "acerto@3": 0.869,
+    "acerto@5": 0.885,
+    "mrr": 0.747,
+    "perguntas": 61,
+    "erros": [
+      {
+        "id": "q24",
+        "pergunta": "O banco só libera o empréstimo se eu fizer um seguro junto. Pode isso?",
+        "esperado": [
+          "39"
+        ],
+        "veio": [
+          "54-C",
+          "54-G",
+          "54-D",
+          "54-F",
+          "50"
+        ]
+      },
+      {
+        "id": "q26",
+        "pergunta": "Mandaram um produto que eu não pedi. Tenho que pagar?",
+        "esperado": [
+          "39"
+        ],
+        "veio": [
+          "18",
+          "12",
+          "19",
+          "41",
+          "70"
+        ]
+      },
+      {
+        "id": "q29",
+        "pergunta": "A empresa de cobrança ligou para meu trabalho e me expôs na frente dos colegas. Eles podem fazer isso?",
+        "esperado": [
+          "42"
+        ],
+        "veio": [
+          "71",
+          "33",
+          "42-A",
+          "68",
+          "54-G"
+        ]
+      },
+      {
+        "id": "q33",
+        "pergunta": "Colocaram meu nome no cadastro de inadimplentes sem me avisar. Isso pode?",
+        "esperado": [
+          "43"
+        ],
+        "veio": [
+          "73",
+          "42",
+          "72",
+          "54-C",
+          "42-A"
+        ]
+      },
+      {
+        "id": "q38",
+        "pergunta": "O vendedor me deu um recibo prometendo um brinde. A loja é obrigada a cumprir?",
+        "esperado": [
+          "48"
+        ],
+        "veio": [
+          "33",
+          "31",
+          "30",
+          "35",
+          "19"
+        ]
+      },
+      {
+        "id": "q54",
+        "pergunta": "No processo, eu é que tenho que provar tudo contra a empresa?",
+        "esperado": [
+          "6"
+        ],
+        "veio": [
+          "103",
+          "28",
+          "54-B",
+          "44",
+          "30"
+        ]
+      },
+      {
+        "id": "q60",
+        "pergunta": "O vendedor terceirizado me enganou. A loja responde por ele?",
+        "esperado": [
+          "34"
+        ],
+        "veio": [
+          "13",
+          "18",
+          "20",
+          "12",
+          "19"
+        ]
+      }
+    ]
+  }
+]
