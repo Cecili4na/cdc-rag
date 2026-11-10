@@ -17,7 +17,7 @@ from pathlib import Path
 
 from cdc_rag.busca import Buscador
 from cdc_rag.llm import do_ambiente
-from cdc_rag.resposta import responder
+from cdc_rag.resposta import Resposta, responder
 
 RAIZ = Path(__file__).resolve().parents[2]
 PERGUNTAS = RAIZ / "data" / "perguntas.jsonl"
@@ -29,7 +29,10 @@ def main() -> None:
     buscador, modelo = Buscador(), do_ambiente()
     linhas = []
     for p in perguntas:
-        r = responder(p["pergunta"], buscador, modelo)
+        try:
+            r = responder(p["pergunta"], buscador, modelo)
+        except Exception as erro:  # noqa: BLE001
+            r = Resposta(f"ERRO: {erro}", citados=[], recuperados=[], aceita=False, tentativas=0)
         linhas.append({
             **p,
             "resposta": r.texto,
