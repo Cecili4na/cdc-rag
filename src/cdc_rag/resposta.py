@@ -21,7 +21,10 @@ from cdc_rag.llm import Modelo
 
 FORA = "FORA_DO_CDC"
 CITACAO = re.compile(r"\[\s*arts?\.\s*([^\]]+)\]", re.IGNORECASE)
-NUMERO = re.compile(r"\d+(?:\s*-\s*[A-Z])?")
+# dentro de um colchete, cada artigo vem separado por vírgula ou "e"; o que não começa com número
+# ("§ 1º", "III", "parágrafo único") é parágrafo ou inciso do artigo anterior, não outro artigo
+PECAS = re.compile(r",|\be\b")
+NUMERO = re.compile(r"(\d+(?:\s*-\s*[A-Z])?)(?:\s*[º°ª])?(?!\d)")  # "art. 6º" é o artigo 6
 
 SISTEMA = f"""Você responde dúvidas de consumidores brasileiros sobre o Código de Defesa do Consumidor.
 
@@ -47,10 +50,13 @@ class Resposta:
 
 
 def citacoes(texto: str) -> list[str]:
-    """'[art. 18]' e '[arts. 49 e 54-A]' viram ['18', '49', '54-A']."""
+    """'[art. 18]', '[arts. 49 e 54-A]' e '[art. 40, § 1º]' viram ['18', '49', '54-A', '40']."""
     numeros = []
     for grupo in CITACAO.findall(texto):
-        numeros += [re.sub(r"\s", "", n) for n in NUMERO.findall(grupo)]
+        for peca in PECAS.split(grupo):
+            m = NUMERO.match(peca.strip())
+            if m:
+                numeros.append(re.sub(r"\s", "", m.group(1)))
     return list(dict.fromkeys(numeros))
 
 

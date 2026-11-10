@@ -86,7 +86,38 @@ otimizar para o teste, por isso fica de fora.
 - **fora do escopo recusadas**: o modelo respondeu `FORA_DO_CDC` em vez de inventar;
 - **precisou de segunda tentativa**: quanto a conferência está segurando o modelo.
 
-> Resultados por modelo: em andamento.
+### Qwen2.5-7B-Instruct (AWQ, 4 bits), servido com vLLM numa T4
+
+| Métrica | Resultado |
+|---|---|
+| Respostas aceitas pela conferência | 56 de 61 (92%)* |
+| Cita o artigo certo | 43 de 61 (70%) |
+| Cita o artigo certo, quando a busca o entregou | 43 de 53 (81%) |
+| Perguntas fora do CDC recusadas | 5 de 5 |
+| Perguntas do CDC recusadas como fora | 3 de 61 |
+| Precisaram de segunda tentativa | 10 |
+
+\* Na execução, foram 54. Duas respostas certas foram recusadas por um **bug da conferência**:
+`[art. 40, § 1º]` era lido como citação do art. 1, que não tinha sido entregue ao modelo. O bug
+foi corrigido (com teste) e as respostas salvas foram conferidas de novo com o código novo, sem
+rodar o modelo outra vez. O guardrail também erra, e a avaliação foi o que mostrou isso.
+
+**O que os números mostram**
+
+- **A busca é o teto.** Nas 8 perguntas em que o artigo certo não veio, o modelo não tinha como
+  acertar. Em 3 delas ele respondeu `FORA_DO_CDC`, que é o comportamento certo: sem o artigo, não
+  há o que citar. Nas outras 5 citou um artigo vizinho, às vezes defensável (o art. 30, sobre
+  oferta, para a pergunta do brinde no recibo).
+- **Quando a busca acerta, a geração erra 1 em 5.** Dos 10 casos, dois são conteúdo certo no
+  formato errado ("de acordo com o artigo 52", sem colchetes), que a conferência recusa de
+  propósito: citação sem formato fixo não dá para conferir. Os outros oito são o modelo
+  escolhendo o artigo errado entre os cinco, como citar o art. 12 (acidente causado pelo produto)
+  numa pergunta de defeito comum, que é o art. 18.
+- **Nenhuma resposta aceita cita artigo que não recebeu.** É o que a conferência garante. Ela
+  não garante que o artigo citado seja o melhor dos cinco, por isso a métrica de artigo certo
+  existe separada.
+
+Respostas completas, pergunta a pergunta: `resultados/respostas_Qwen_Qwen2.5-7B-Instruct-AWQ.jsonl`.
 
 ## Rodando
 

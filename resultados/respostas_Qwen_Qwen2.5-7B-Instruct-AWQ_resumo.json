@@ -1,0 +1,11 @@
+{
+  "modelo": "Qwen/Qwen2.5-7B-Instruct-AWQ",
+  "perguntas_no_escopo": 61,
+  "aceitas": 0.885,
+  "cita_artigo_certo": 0.705,
+  "cita_artigo_certo_quando_recuperado": 0.811,
+  "recusou_no_escopo": 3,
+  "fora_do_escopo_recusadas": "5/5",
+  "precisou_segunda_tentativa": 10,
+  "recusadas_pela_conferencia": 4
+}

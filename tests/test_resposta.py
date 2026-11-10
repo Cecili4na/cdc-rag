@@ -31,6 +31,13 @@ def test_extrai_citacoes_simples_e_compostas():
     assert citacoes("Pode devolver [art. 49]. Veja também [arts. 18 e 54-A].") == ["49", "18", "54-A"]
 
 
+def test_paragrafo_e_inciso_nao_viram_artigo():
+    # bug real: "[art. 40, § 1º]" era lido como citação do art. 1 e a resposta certa era recusada
+    assert citacoes("Vale por dez dias [art. 40, § 1º].") == ["40"]
+    assert citacoes("[art. 54-C, III] e [arts. 12, 13 e 25]") == ["54-C", "12", "13", "25"]
+    assert citacoes("[art. 93, I] [art. 6º, VIII]") == ["93", "6"]  # artigos de 1 a 9 são ordinais
+
+
 def test_citacao_repetida_conta_uma_vez():
     assert citacoes("[art. 49] ... [art. 49]") == ["49"]
 
