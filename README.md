@@ -1,5 +1,7 @@
 # cdc-rag
 
+[![testes](https://github.com/Cecili4na/cdc-rag/actions/workflows/testes.yml/badge.svg)](https://github.com/Cecili4na/cdc-rag/actions/workflows/testes.yml)
+
 Responde dúvidas de consumidores sobre o **Código de Defesa do Consumidor** citando o artigo da
 lei, e recusa a resposta quando não consegue citar direito.
 
@@ -147,3 +149,7 @@ Testes (não precisam de modelo nem de internet): `uv run pytest`.
 
 Lei nº 8.078/1990, texto compilado do [Planalto](https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm).
 Textos de lei não são protegidos por direito autoral (Lei nº 9.610/1998, art. 8º, IV).
+
+## Licença
+
+Código sob a licença MIT. O texto do Código de Defesa do Consumidor (Lei 8.078/1990) é de domínio público.

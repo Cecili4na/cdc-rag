@@ -1,0 +1,18 @@
+name: testes
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  testes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      # os testes não carregam o modelo de embeddings: instala só o necessário, sem o PyTorch
+      - run: uv venv -p 3.12 && uv pip install numpy rank-bm25 httpx pytest ruff
+      - run: .venv/bin/ruff check src tests
+      - run: .venv/bin/pytest -q
+        env:
+          PYTHONPATH: src
